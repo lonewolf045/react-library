@@ -153,3 +153,73 @@
     flex-direction: column;
     margin-bottom: 5%;
 }
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  margin: 0 auto;
+  max-width: 90%;
+  color: white;
+  position: absolute;
+  top: 30%;
+  padding: 30px;
+  transition: 0.5s;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0,0,0, 0.6);
+  border-radius: 2.5%;
+  /*width: 140px;*/
+  margin: 10px;
+  align-items: stretch;
+  border: 1rem;
+  padding-top: 1.5rem;
+  /*padding: 1.5rem;*/
+}
+
+.book-detail {
+  padding: 0 1.5rem;
+  padding-bottom: 1.5rem;
+  overflow-wrap: normal;
+  color: white;
+}
+
+.book-card-tools {
+  display: inline-flex;
+  width: 100%;
+  flex-direction: row;
+  margin-top: auto;
+}
+
+.read {
+  background-color: greenyellow;
+  border: none;
+  height: 100%;
+  opacity: 0.6;
+}
+
+.not-read {
+  background-color: red;
+  border: none;
+  height: 100%;
+  opacity: 0.6;
+}
+
+.delete {
+  background-color: sandybrown;
+  border: none;
+  height: 100%;
+  opacity: 0.6;
+}
+
+.book-card-tools button:hover {
+  opacity: 1;
+}
+
+.book-card-tools button {
+  height: 50px;
+  width: 50%;
+}
